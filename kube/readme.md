@@ -1,11 +1,11 @@
 export CONTAINER_PORT=8080
 export EXPOSED_PORT=80
 export APPLICATION_NAME=$(basename $(git rev-parse --show-toplevel)) # ✋
-export DOCKER_USER="k33g"
+export DOCKER_USER="qaubert"
 export NAMESPACE="training"
 export IMAGE_NAME="${APPLICATION_NAME}-img" # ✋
 export TAG=$(git rev-parse --short HEAD) # ✋
 export IMAGE="${DOCKER_USER}/${IMAGE_NAME}:${TAG}"
-export CLUSTER_IP="192.168.64.17" # ✋
+export CLUSTER_IP="192.168.64.2" # ✋
 export BRANCH=$(git symbolic-ref --short HEAD) # ✋
 export HOST="${APPLICATION_NAME}.${BRANCH}.${CLUSTER_IP}.nip.io" # ✋

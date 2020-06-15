@@ -36,7 +36,7 @@ let fancy_name = fancyName()
 
 app.get('/api/hello', (req, res) => {
 	res.send({
-		message: `👋 hello world 🤪`,
+		message: `👋 hello world 🌍`,
 		pod: fancy_name
 	})
 })
